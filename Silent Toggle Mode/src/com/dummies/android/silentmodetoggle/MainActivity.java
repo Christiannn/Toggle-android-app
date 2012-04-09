@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
         checkIfPhoneIsSilent();
         setButtonClickListener();
     }
-    // Checks for a tough on the toggle button
+    // Checks for a touch on the toggle button
     private void setButtonClickListener() {
         Button toggleButton = (Button)findViewById(R.id.toggleButton);
         toggleButton.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +66,8 @@ public class MainActivity extends Activity {
     	}
     	imageView.setImageDrawable(newPhoneImage);
     }
-    
+    // this nice android function onResume() is activated 
+    // when you come back after you been busy with other apps
     @Override
     protected void onResume() {
     super.onResume();
